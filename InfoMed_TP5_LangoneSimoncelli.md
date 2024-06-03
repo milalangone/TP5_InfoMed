@@ -37,7 +37,7 @@ En la BBDD a utilizar, observamos que algunos registros no coincidían exactamen
 
 Lo que se decidió entonces, fue utilizar una extensión que nos permite hacer _fuzzy matching_[^1] y pasar los registros de la columna ciudad a minúscula para así obtener todos los registros correspondientes.
 
-[^1]: tal cual.
+[^1]: Es una forma de matchear strings de forma parcial, útil cuando los datos no están tan limpios y las coincidencias buscadas no son exactas. Permite también seleccionar un grado de similitud de acuerdo al objetivo buscado.
 
 ``` sql
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
